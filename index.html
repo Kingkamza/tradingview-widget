@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView 위젯</title>
+</head>
+<body>
+    <h2>TradingView 환율 위젯</h2>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+            <a href="https://kr.tradingview.com/" rel="noopener nofollow" target="_blank">
+                <span class="blue-text">트레이딩뷰에서 모든 시장 추적</span>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+        {
+            "width": "700",
+            "height": "250",
+            "symbolsGroups": [
+                {
+                    "name": "Forex",
+                    "originalName": "Forex",
+                    "symbols": [
+                        { "name": "FX_IDC:USDKRW" },
+                        { "name": "FX_IDC:JPYKRW" },
+                        { "name": "FX_IDC:EURKRW" },
+                        { "name": "MARKETSCOM:DOLLARINDEX" }
+                    ]
+                }
+            ],
+            "showSymbolLogo": true,
+            "isTransparent": false,
+            "colorTheme": "dark",
+            "locale": "kr",
+            "backgroundColor": "rgba(0, 0, 0, 1)"
+        }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+</body>
+</html>
